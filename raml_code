@@ -1,0 +1,17 @@
+#%RAML 1.0
+title: application-imp
+baseUri: https://api.application-imp.com
+version: v1
+protocols: [HTTP, HTTPS]
+mediaType: [application/json, application/xml]
+/resource1:
+  post:
+    body:
+      application/json:
+    responses:
+      200:
+        body:
+          application/xml:
+            example:
+              status: 200
+              message : sucess
